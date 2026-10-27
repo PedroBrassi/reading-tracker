@@ -10,12 +10,23 @@ O projeto será construído em duas etapas: frontend em HTML, CSS e JavaScript p
 
 | Integrante | Matrícula |
 |---|---|
+| Ana Flavia Freiria | 2024.1.08.001 |
 | Aurelio Junior | A informar |
-| Ana Flavia Freiri | A informar |
-| Raissa Nunes | A informar |
-| Pedro Brassi | A informar |
+| Otávio de Oliveira | 2025.1.08.034 |
+| Pedro Luccas | 2022.2.08.009 |
+| Raissa Peret | A informar |
+
 
 A composição da equipe deve ser mantida entre as duas entregas. Cada integrante deve contribuir com commits e compreender o código apresentado.
+
+### Divisão de responsabilidades
+
+| Frente | Integrantes | Responsabilidades principais |
+|---|---|---|
+| Frontend | Aurelio Junior, Ana Flavia Freiria e Otávio de Oliveira | Telas, HTML/CSS/JavaScript, validações no navegador, localStorage na entrega 1 e integração com a API na entrega 2 |
+| Backend | Pedro Luccas e Raissa Peret | API Spring Boot, regras e validações no servidor, banco persistente, importação do seed e restauração |
+
+Integração, testes de aceitação, documentação, declaração de uso de IA, revisão e preparação das entregas são responsabilidades compartilhadas. Durante a primeira etapa, Pedro e Raissa também preparam o backend e apoiam a revisão e os testes do frontend. A divisão interna das tarefas de cada frente será registrada no Trello.
 
 ## Repositório e planejamento
 
@@ -23,6 +34,19 @@ A composição da equipe deve ser mantida entre as duas entregas. Cada integrant
 - [Quadro de tarefas no Trello](https://trello.com/b/BSpxAKlv)
 - [Roteiro de desenvolvimento](docs/ROTEIRO_DESENVOLVIMENTO.md)
 - [Enunciados no Moodle](https://campusvirtual.unifal-mg.edu.br/moodle/course/section.php?id=30335)
+
+## Fluxo de colaboração e commits
+
+1. Antes de começar uma tarefa, atualizar a cópia local de main e criar uma branch a partir dela.
+2. Criar uma branch por tarefa, com nome descritivo, como feat/authors-page, feat/books-page, feat/readings-page, feat/backend-setup ou feat/authors-api. Não manter uma branch permanente por integrante.
+3. Cada integrante faz seus próprios commits, com seu nome e e-mail configurados no Git. Cada commit deve representar uma mudança coerente; arquivos relacionados podem ficar juntos, sem exigir um commit por arquivo.
+4. Enviar a branch ao GitHub e abrir um pull request para main, descrevendo a mudança e como foi verificada.
+5. Outro integrante revisa o pull request antes da integração. Resolver os comentários e confirmar que a aplicação continua funcionando antes de fazer o merge.
+6. Integrar as tarefas em main por pull request, evitando commits diretos nessa branch. Depois do merge, atualizar main local antes de iniciar outra tarefa.
+
+Coordenar alterações em arquivos compartilhados, especialmente store.js, validation.js, ui.js e styles.css, e registrar responsáveis e revisores no Trello. A autoria dos commits deve refletir quem realizou cada contribuição.
+
+A atualização dos integrantes, das responsabilidades e deste fluxo no README e no roteiro de desenvolvimento pertence ao mesmo commit de documentação, por exemplo: docs: atualiza equipe e fluxo de colaboração. Alterações de funcionalidades devem ficar em commits separados dessa atualização.
 
 ## Entregas
 
@@ -145,7 +169,7 @@ Os exercícios FR-08 a FR-18 são opcionais e não pontuados; nenhum está decla
 
 | Ferramenta | Finalidade já utilizada | Partes afetadas |
 |---|---|---|
-| ChatGPT / Codex | Explicação do enunciado; planejamento da estrutura, das etapas e do Trello; preparação da documentação inicial | README.md e roteiro de desenvolvimento |
+| ChatGPT / Codex | Explicação do enunciado; planejamento da estrutura, das etapas e do Trello; preparação da documentação inicial e atualização da equipe, das responsabilidades e do fluxo de colaboração | README.md e roteiro de desenvolvimento |
 
 Até a preparação desta documentação, não foi produzido código da aplicação nesta conversa. A equipe deverá atualizar esta seção com qualquer uso posterior de IA, incluindo explicações, depuração e geração de código, identificando as partes afetadas. Todos devem compreender o que entregarem.
 
@@ -163,3 +187,4 @@ Marcar e enviar ao GitHub as tags `delivery-1` e `delivery-2` nos commits a sere
 ## Referência
 
 Enunciado **Reading Tracker Web Application**, atualizado em **16/10/2026**, disponibilizado no Moodle da disciplina. O roteiro de desenvolvimento diferencia exigências oficiais de sugestões de organização.
+

@@ -1,18 +1,28 @@
 # Roteiro de desenvolvimento do Reading Tracker
 
-Este documento organiza o Trabalho 2 de Programação Web em uma sequência de execução para Aurelio Junior, Ana Flavia Freiri, Raissa Nunes e Pedro Brassi. O objetivo é concluir primeiro o frontend obrigatório e depois integrar o backend, preservando as funcionalidades e preparando as duas submissões.
+Este documento organiza o Trabalho 2 de Programação Web em uma sequência de execução para Aurelio Junior, Ana Flavia Freiria, Otávio de Oliveira, Pedro Luccas e Raissa Peret. O objetivo é concluir primeiro o frontend obrigatório e depois integrar o backend, preservando as funcionalidades e preparando as duas submissões.
 
-O README acompanha o repositório e deve refletir o estado real do projeto. Este roteiro serve para organizar o trabalho da equipe. As responsabilidades abaixo são frentes de trabalho sugeridas, sem atribuir tarefas a pessoas sem acordo do grupo.
+O README acompanha o repositório e deve refletir o estado real do projeto. Este roteiro serve para organizar o trabalho da equipe. A divisão definida para a equipe é: Aurelio Junior, Ana Flavia Freiria e Otávio de Oliveira no frontend; Pedro Luccas e Raissa Peret no backend. As sugestões de organização dentro de cada frente podem ser ajustadas pelo grupo.
 
 ## Equipe e prazos
 
-Equipe: Aurelio Junior; Ana Flavia Freiri; Raissa Nunes; Pedro Brassi. Completar as matrículas no README antes da primeira entrega e manter os mesmos integrantes na segunda.
+| Integrante | Matrícula | Frente responsável |
+|---|---|---|
+| Ana Flavia Freiria | 2024.1.08.001 | Frontend |
+| Aurelio Junior | A informar | Frontend |
+| Otávio de Oliveira | 2025.1.08.034 | Frontend |
+| Pedro Luccas | 2022.2.08.009 | Backend |
+| Raissa Peret | A informar | Backend |
 
-Entrega 1: 20/11/2026 às 23h59 de Brasília. Entrega 2: 11/12/2026 às 23h59 de Brasília. Datas intermediárias são metas sugeridas, não prazos adicionais do professor.
+Completar as matrículas de Aurelio e Raissa no README antes da primeira entrega e manter os mesmos cinco integrantes na segunda. Todos devem contribuir com commits próprios e compreender a aplicação entregue.
+
+Entrega 1: 20/11/2026 às 23h59 de Brasília. Entrega 2: 11/12/2026 às 23h59 de Brasília. Datas intermediárias são metas sugeridas, não prazos adicionais do professor. As metas de até 25/10 já passaram na atualização de 27/10/2026; conferir as pendências das etapas 1 a 3 e resolvê-las junto ao início das etapas 4 e 5, sem presumir que foram concluídas.
 
 ## Ordem de execução
 
 ### Etapa 1 Conferir o enunciado e os dados
+
+**Responsáveis:** equipe completa, conforme a divisão de frentes abaixo.
 
 Até 25/10. Ler o enunciado atualizado em 16/10/2026 e o documento que descreve o registro atual de leituras. Obter o seed.json e seu guia oficial. Os três links de apoio estavam com erro na consulta de 19/10; verificar novamente e solicitar ao professor se necessário. Podemos desenhar telas enquanto isso, mas a importação final depende do seed oficial.
 
@@ -20,17 +30,23 @@ Concluído quando todos conhecerem FR-01 a FR-07 e os dados oficiais estiverem d
 
 ### Etapa 2 Preparar o repositório e a equipe
 
+**Responsáveis:** equipe completa, conforme a divisão de frentes abaixo.
+
 Até 25/10. Usar o repositório público PedroBrassi/reading-tracker. Pedro já informou que o clonou; os demais integrantes precisam preparar suas cópias e combinar o fluxo de colaboração. Colocar README.md na raiz e este roteiro em docs/ROTEIRO_DESENVOLVIMENTO.md. Preencher matrículas, definir responsáveis e revisores por tarefa e combinar commits frequentes. Não guardar credenciais no repositório.
 
 Sugestão: cada tarefa em uma branch curta, revisada por outro integrante antes de integrar. Todos devem contribuir com código e entender a aplicação inteira. O Trello já contém as tarefas e seus checklists.
 
 ### Etapa 3 Revisar os conhecimentos necessários
 
+**Responsáveis:** equipe completa, conforme a divisão de frentes abaixo.
+
 Até 25/10 e durante o desenvolvimento. Revisar HTML semântico, formulários, tabelas, CSS/Flexbox e responsividade; depois JavaScript, DOM, eventos, funções, arrays, objetos, JSON, validação, localStorage, Promises, async/await, fetch e módulos ES. Não esperar dominar tudo para começar: implementar um fluxo pequeno e funcional.
 
 Para a segunda entrega, estudar Java, HTTP/REST, Spring Boot, JPA, relacionamentos, Bean Validation e arquitetura em camadas. Os vídeos 36 a 44 da playlist são indicados pelo enunciado, observando as diferenças entre Spring Boot 3 dos exemplos e Spring Boot 4 exigido no trabalho.
 
 ### Etapa 4 Definir telas e estrutura do frontend
+
+**Responsáveis:** Aurelio, Ana e Otávio (frontend).
 
 De 26/10 a 01/11. Criar uma pasta frontend com index.html, authors.html, books.html e readings.html; css/styles.css; js/store.js, validation.js, ui.js, authors.js, books.js e readings.js; data/seed.json e assets/images.
 
@@ -40,6 +56,8 @@ Desenhar navegação, formulários, confirmações, mensagens de erro e estados 
 
 ### Etapa 5 Implementar os dados e o armazenamento
 
+**Responsáveis:** Aurelio, Ana e Otávio (frontend).
+
 De 26/10 a 01/11. Usar cinco coleções: countries, authors, themes, books e readings. Separar a obra de cada ocasião de leitura. Respeitar o formato do seed, com referências por IDs, null para campos ausentes e arrays vazios para relações sem valores.
 
 Implementar em store.js funções assíncronas de consulta e gravação, chamadas com await. Importar o seed via fetch somente no primeiro uso; depois usar localStorage e preservar alterações. Gerar IDs novos depois do maior ID existente na respectiva coleção. Implementar Reset data com confirmação, limpando apenas as chaves da aplicação e restaurando o seed. Preparar erros com campos e motivos, compatíveis com a futura API.
@@ -48,17 +66,23 @@ Validar recarregando a página após uma alteração. O dado alterado deve perma
 
 ### Etapa 6 Implementar autores
 
+**Responsáveis:** Aurelio, Ana e Otávio (frontend).
+
 De 02 a 08/11. Implementar criar, consultar, editar e excluir autores. Aplicar nome obrigatório e único sem diferenciar maiúsculas de minúsculas, nacionalidade opcional da lista fixa e validações de datas. Bloquear exclusão de autor vinculado a livros e mostrar os títulos relacionados.
 
 Testar cadastro válido, duplicação por diferença de caixa, datas inválidas, edição e exclusão com e sem vínculos. Esses testes cobrem FR-01 e parte de FR-06.
 
 ### Etapa 7 Implementar livros e temas
 
+**Responsáveis:** Aurelio, Ana e Otávio (frontend).
+
 De 02 a 08/11. Implementar CRUD de livros, seleção de zero ou mais autores e temas e criação de tema no formulário. Permitir livro apenas com título. Usar as listas controladas do enunciado e validar o ano de publicação, incluindo anos negativos e rejeição do ano zero.
 
 Testar livro incompleto válido, tema duplicado, publicação futura, ano negativo e seleção de vários autores. Esses fluxos cobrem FR-02 e parte de FR-06.
 
 ### Etapa 8 Implementar leituras e mudanças de status
+
+**Responsáveis:** Aurelio, Ana e Otávio (frontend).
 
 De 02 a 08/11. Implementar leituras vinculadas a livros, com criação, edição e exclusão. No formulário do livro, permitir cadastrar a primeira leitura opcional no mesmo Save. Para releitura, criar um novo registro. Ao excluir um livro, informar e confirmar quantas leituras serão removidas.
 
@@ -68,17 +92,23 @@ Testar o fluxo completo autor, livro e leitura; wishlist; releitura; exclusão e
 
 ### Etapa 9 Completar histórico e qualidade da interface
 
+**Responsáveis:** Aurelio, Ana e Otávio (frontend).
+
 De 09 a 15/11. Mostrar título, autores, status, ano e nota em histórico ordenável por cada coluna. Ausências aparecem como hífen e ficam depois dos valores preenchidos em qualquer ordenação. Ordem inicial por ano decrescente e, no empate, ID crescente.
 
 Concluir validações e mensagens junto aos campos. Conferir HTML semântico, navegação, notebook e celular. Testar dados incompletos sem null, undefined ou NaN visíveis. Priorizar os sete requisitos obrigatórios antes de melhorias opcionais.
 
 ### Etapa 10 Validar e enviar a primeira entrega
 
+**Responsáveis:** equipe completa, conforme a divisão de frentes abaixo.
+
 De 16 a 19/11. Revisar FR-01 a FR-07 e executar o projeto a partir de uma cópia limpa seguindo somente o README. Confirmar seed, recarga, restauração e todos os fluxos de cadastro. Atualizar status de requisitos, integrantes, matrículas, instruções, uso de IA e autoavaliação.
 
 Até 20/11 às 23h59. Publicar o commit final e a tag delivery-1, verificar que o GitHub está público e enviar e-mail com link e autoavaliação, copiando os outros integrantes. Não há vídeo obrigatório na primeira entrega. A tag preserva a versão avaliada mesmo após iniciar o backend.
 
 ### Etapa 11 Preparar backend e banco persistente
+
+**Responsáveis:** Pedro e Raissa (backend).
 
 De 21 a 27/11. Criar projeto Java 21 ou superior com Spring Boot 4.x e Maven Wrapper. Escolha recomendada: Spring Web, Spring Data JPA, Validation e H2 em arquivo. Criar pacotes controller, service, repository, model e config. Manter regras nos services, não nos controllers.
 
@@ -88,11 +118,15 @@ Deixar o banco gerar IDs e mapear IDs do seed para entidades salvas, importando 
 
 ### Etapa 12 Implementar a API e as validações do servidor
 
+**Responsáveis:** Pedro e Raissa (backend).
+
 De 21/11 a 04/12. Implementar os endpoints mínimos listados na referência técnica deste roteiro, com formatos JSON compatíveis com o seed. Revalidar todas as regras no servidor, incluindo vínculos e exclusões. Usar corretamente 200, 201, 204, 400, 404 e 409.
 
 Responder com status, message e errors; em validação, cada erro contém field e message. Respostas 404 e 409 usam errors vazio. Testar requisições válidas e inválidas diretamente na API, inclusive tentativas que contornem as validações do navegador.
 
 ### Etapa 13 Integrar o frontend
+
+**Responsáveis:** equipe completa, conforme a divisão de frentes abaixo.
 
 De 28/11 a 04/12. Mover o frontend para src/main/resources/static e adaptar store.js para fetch com URLs relativas, como /api/books. Remover localStorage como armazenamento dos dados da aplicação nesta entrega. Manter todas as funcionalidades anteriores, exibindo erros retornados pela API junto aos campos.
 
@@ -100,15 +134,48 @@ Abrir a aplicação em localhost:8080. Testar CRUD, histórico, status, restaura
 
 ### Etapa 14 Testar documentar e enviar a segunda entrega
 
+**Responsáveis:** equipe completa, conforme a divisão de frentes abaixo.
+
 De 05 a 10/12. Testar a aplicação por um único comando, com Java 21 ou superior como requisito de instalação no caminho recomendado. No Windows, usar .\mvnw.cmd spring-boot:run. Confirmar persistência após parar e iniciar, seed somente no primeiro início e restauração funcional.
 
 Atualizar README com versão exata do Java, execução, endpoints e exemplos reais de requisição/resposta para autores, livros e leituras. Atualizar checklist e declaração de IA. Gravar vídeo de no máximo 15 minutos: primeiro a aplicação e sua persistência, depois controllers, services, repositories, configuração do banco e chamadas fetch. Disponibilizar sem login e incluir o link no README.
 
 Até 11/12 às 23h59. Publicar commit e tag delivery-2; enviar e-mail com GitHub, autoavaliação e vídeo, copiando a equipe. Conferir acessos e guardar comprovante do envio.
 
-## Organização sugerida entre quatro integrantes
+## Organização da equipe de cinco integrantes
 
-Dividir o trabalho por frentes, com revisão cruzada, em vez de atribuir toda a primeira entrega a uma pessoa e toda a segunda a outra. Uma divisão possível é: autores e validações; livros e temas; leituras e histórico; armazenamento e integração. Layout, testes, README e vídeo são responsabilidades compartilhadas. Na fase backend, cada frente implementa e testa sua API, com uma pessoa coordenando a persistência e outra revisando a integração. Definir os nomes responsáveis em reunião ou no Trello.
+### Frontend — Aurelio, Ana e Otávio
+
+Aurelio Junior, Ana Flavia Freiria e Otávio de Oliveira são responsáveis pelas telas, HTML/CSS/JavaScript, navegação, validações no navegador, autores, livros, temas, leituras, histórico, carga do seed e armazenamento em localStorage da entrega 1. Também cuidam da adaptação de store.js para a API e da apresentação dos erros do servidor na entrega 2.
+
+Distribuir as tarefas das etapas 4 a 9 entre os três no Trello, incluindo responsáveis e revisores. Arquivos compartilhados, como styles.css, store.js, validation.js e ui.js, precisam de coordenação para evitar alterações conflitantes. A divisão de funcionalidades entre os três permanece a combinar.
+
+### Backend — Pedro e Raissa
+
+Pedro Luccas e Raissa Peret são responsáveis pelo projeto Spring Boot, entidades e relacionamentos, banco persistente, importação e restauração do seed, repositories, services, controllers, endpoints, validações e respostas de erro. Dividir as tarefas das etapas 11 e 12 entre os dois no Trello, com revisão cruzada; a divisão interna permanece a combinar.
+
+Durante a preparação da entrega 1, Pedro e Raissa estudam Java/Spring Boot, revisam com o trio de frontend os formatos de dados e as funções de store.js e ajudam na revisão dos requisitos, nos testes e na documentação. Podem preparar o backend em branch própria, preservando o funcionamento da versão da entrega 1. Não precisam esperar novembro para começar os estudos e o planejamento.
+
+### Integração, revisão e entregas — equipe completa
+
+Na etapa 13, Aurelio, Ana e Otávio adaptam as chamadas e a interface; Pedro e Raissa garantem os endpoints, as regras do servidor e a persistência. As duas frentes combinam previamente campos, tipos, valores ausentes, IDs, códigos HTTP e estrutura de erros. Validar juntos o fluxo autor → livro → leitura e os casos de exclusão, restauração e falha de validação.
+
+README, checklist, declaração de IA, revisão dos requisitos, testes de aceitação, autoavaliação e vídeo são responsabilidades compartilhadas. A responsabilidade principal por uma camada não dispensa nenhum integrante de compreender o código apresentado. Cada pessoa deve registrar suas próprias contribuições em commits descritivos; não criar commits vazios apenas para contabilizar participação.
+
+Atualizar os nomes e responsáveis no Trello para refletir esta divisão. A cada tarefa, indicar o resultado esperado, um responsável e um revisor. Mudanças relacionadas à equipe no README e neste roteiro podem ficar no mesmo commit de documentação: docs: atualiza equipe e divisão de responsabilidades.
+
+## Fluxo de colaboração e commits
+
+1. Antes de começar uma tarefa, atualizar a cópia local de main e criar uma branch a partir dela.
+2. Criar uma branch por tarefa, com nome descritivo, como feat/authors-page, feat/books-page, feat/readings-page, feat/backend-setup ou feat/authors-api. Não manter uma branch permanente por integrante.
+3. Cada integrante faz seus próprios commits, com seu nome e e-mail configurados no Git. Cada commit deve representar uma mudança coerente; arquivos relacionados podem ficar juntos, sem exigir um commit por arquivo.
+4. Enviar a branch ao GitHub e abrir um pull request para main, descrevendo a mudança e como foi verificada.
+5. Outro integrante revisa o pull request antes da integração. Resolver os comentários e confirmar que a aplicação continua funcionando antes de fazer o merge.
+6. Integrar as tarefas em main por pull request, evitando commits diretos nessa branch. Depois do merge, atualizar main local antes de iniciar outra tarefa.
+
+Coordenar alterações em arquivos compartilhados, especialmente store.js, validation.js, ui.js e styles.css, e registrar responsáveis e revisores no Trello. A autoria dos commits deve refletir quem realizou cada contribuição.
+
+A atualização dos integrantes, das responsabilidades e deste fluxo no README e no roteiro de desenvolvimento pertence ao mesmo commit de documentação, por exemplo: docs: atualiza equipe e fluxo de colaboração. Alterações de funcionalidades devem ficar em commits separados dessa atualização.
 
 ## Referência completa para consulta
 
@@ -307,3 +374,5 @@ FR-08 a FR-18 são **opcionais e não valem pontos**: filtros e busca, visão de
 - [Trabalhos do semestre no Moodle](https://campusvirtual.unifal-mg.edu.br/moodle/course/section.php?id=30335).
 
 Os PDFs citados já estão na pasta `Docs` da disciplina. Este guia é material de apoio e não substitui o enunciado original.
+
+
