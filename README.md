@@ -11,10 +11,10 @@ O projeto será construído em duas etapas: frontend em HTML, CSS e JavaScript p
 | Integrante | Matrícula |
 |---|---|
 | Ana Flavia Freiria | 2024.1.08.001 |
-| Aurelio Junior | A informar |
+| Aurelio Junior | 2024.2.08.008 |
 | Otávio de Oliveira | 2025.1.08.034 |
 | Pedro Luccas | 2022.2.08.009 |
-| Raissa Peret | A informar |
+| Raissa Peret | 2024.1.08.021 |
 
 
 A composição da equipe deve ser mantida entre as duas entregas. Cada integrante deve contribuir com commits e compreender o código apresentado.
@@ -33,6 +33,7 @@ Integração, testes de aceitação, documentação, declaração de uso de IA, 
 - [Repositório público](https://github.com/PedroBrassi/reading-tracker)
 - [Quadro de tarefas no Trello](https://trello.com/b/BSpxAKlv)
 - [Roteiro de desenvolvimento](docs/ROTEIRO_DESENVOLVIMENTO.md)
+- [Guia do backend — Pedro e Raissa](docs/GUIA_BACKEND.md)
 - [Enunciados no Moodle](https://campusvirtual.unifal-mg.edu.br/moodle/course/section.php?id=30335)
 
 ## Fluxo de colaboração e commits
@@ -169,7 +170,7 @@ Os exercícios FR-08 a FR-18 são opcionais e não pontuados; nenhum está decla
 
 | Ferramenta | Finalidade já utilizada | Partes afetadas |
 |---|---|---|
-| ChatGPT / Codex | Explicação do enunciado; planejamento da estrutura, das etapas e do Trello; preparação da documentação inicial e atualização da equipe, das responsabilidades e do fluxo de colaboração | README.md e roteiro de desenvolvimento |
+| ChatGPT / Codex | Explicação do enunciado; planejamento da estrutura, das etapas e do Trello; preparação da documentação inicial e atualização da equipe, das responsabilidades e do fluxo de colaboração; preparação do guia do backend | README.md, roteiro de desenvolvimento e guia do backend |
 
 Até a preparação desta documentação, não foi produzido código da aplicação nesta conversa. A equipe deverá atualizar esta seção com qualquer uso posterior de IA, incluindo explicações, depuração e geração de código, identificando as partes afetadas. Todos devem compreender o que entregarem.
 
@@ -187,4 +188,5 @@ Marcar e enviar ao GitHub as tags `delivery-1` e `delivery-2` nos commits a sere
 ## Referência
 
 Enunciado **Reading Tracker Web Application**, atualizado em **16/10/2026**, disponibilizado no Moodle da disciplina. O roteiro de desenvolvimento diferencia exigências oficiais de sugestões de organização.
+
 

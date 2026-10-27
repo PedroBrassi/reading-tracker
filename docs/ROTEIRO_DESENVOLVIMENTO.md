@@ -9,12 +9,10 @@ O README acompanha o repositório e deve refletir o estado real do projeto. Este
 | Integrante | Matrícula | Frente responsável |
 |---|---|---|
 | Ana Flavia Freiria | 2024.1.08.001 | Frontend |
-| Aurelio Junior | A informar | Frontend |
+| Aurelio Junior | 2024.2.08.008 | Frontend |
 | Otávio de Oliveira | 2025.1.08.034 | Frontend |
 | Pedro Luccas | 2022.2.08.009 | Backend |
-| Raissa Peret | A informar | Backend |
-
-Completar as matrículas de Aurelio e Raissa no README antes da primeira entrega e manter os mesmos cinco integrantes na segunda. Todos devem contribuir com commits próprios e compreender a aplicação entregue.
+| Raissa Peret | 2024.1.08.021 | Backend |
 
 Entrega 1: 20/11/2026 às 23h59 de Brasília. Entrega 2: 11/12/2026 às 23h59 de Brasília. Datas intermediárias são metas sugeridas, não prazos adicionais do professor. As metas de até 25/10 já passaram na atualização de 27/10/2026; conferir as pendências das etapas 1 a 3 e resolvê-las junto ao início das etapas 4 e 5, sem presumir que foram concluídas.
 
